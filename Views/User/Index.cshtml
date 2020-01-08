@@ -1,0 +1,14 @@
+﻿@*Welcome Screen View*@
+@{
+    ViewBag.Title = "Welcome";
+}
+
+
+@Html.Raw(TempData["LoginSucessMessage"])
+
+
+<h2>Welcome!! @Session["Username"]</h2>
+
+
+<h4>@Html.ActionLink("Product List","List","User")</h4>
+<h4>@Html.ActionLink("Add Product","Create","User")</h4>
